@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+	padding: 0 !important;
+}
+
+body {
+	background-color: lightblue;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+}
+
+/* Formatação do cabeçalho da aplicação */
+
+header {
+	height: 500px;	
+	color: white;
+	background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70) 100%), url("imagens/balanca.jpg");
+	background-size: cover;
+
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+}
+
+.fa-calculator {
+	margin-left: 5px;
+}
+
+/* Dados do usuário */
+
+.dados-usuario {
+	padding: 60px 0;
+}
+
+.dados-usuario label:last-of-type {
+	padding-top: 10px;
+}
+
+.dados-usuario button {
+	margin-top: 10px;
+}
+
+/* Seção informativa 1 */
+
+.definicao-imc {
+	background-color: lightgreen;
+	padding: 20px;
+}
+
+.definicao-imc p {
+	padding: 20px 0;
+}
+
+/* Relatório */
+
+.tabela-dados {
+	padding: 60px 0;
+}
+
+.dica-saude {
+	background-color: lightgreen;
+	padding: 20px;
+  color: #081C15;
+}
+
+.dica-saude p {
+	padding: 20px 20px 0 20px;
+}
+
+.dica-saude a {
+	padding-top: 20px;
+}
+
+/* Rodape */
+footer {
+	background-color: rgb(31, 31, 31);
+	color: white;
+}
+
+footer .row {
+	padding: 40px 0;
+}
+
+footer a {
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+	font-weight: 700;
+}
+
+footer a:hover {
+	color: #40916c;
+}
+
+
+@media screen and (max-width: 400px) {
+	header {
+		height: 300px;
+	}
+}
